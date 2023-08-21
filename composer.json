@@ -1,0 +1,17 @@
+{
+    "name": "rakesh/wc-pdf-download",
+    "autoload": {
+        "psr-4": {
+            "Rakesh\\WcPdfDownload\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rakesh",
+            "email": "rakesh.bokde@arsenaltech.com"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^2.0"
+    }
+}
