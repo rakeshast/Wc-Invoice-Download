@@ -1,4 +1,4 @@
-# WordPress PDF PDF Invoice Download Plugin
+# WordPress WC PDF Invoice Download Plugin
 
 The WordPress PDF Invoice Download Plugin is a powerful tool designed to facilitate the generation and download of PDF Invoices in PDF format for both customers and administrators. This plugin streamlines the invoicing process, making it easier to manage transactions and provide a professional experience for users.
 
