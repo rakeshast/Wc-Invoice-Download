@@ -2,10 +2,6 @@
 
 /**
  *
- * @link              https://github.com/aryanbokde
- * @since             1.0.0
- * @package           wc-invoice
- *
  * @wordpress-plugin
  * Plugin Name:       WC Invoice Download
  * Plugin URI:        https://wordpress.org/plugins/wc-invoice-download 
@@ -17,6 +13,11 @@
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       wc-invoice
  * Domain Path:       /languages
+ *  
+ * @link              https://github.com/aryanbokde
+ * @since             1.0.0
+ * @package           wc-invoice
+ *
  */
 
 
@@ -187,7 +188,7 @@ function wc_invoice_get_order_details_pdf_ajax_code(){
         do_action( 'wc_invoice_order_invoice_dpf_add_extra_order_details', $order );
         $html .= ob_get_clean();
 
-        $html .= '<tr><th ><strong>' . esc_html__( 'Items', 'wcorderpdf' ) . '</strong></th>';
+        $html .= '<tr><th style="text-align:left;">' . esc_html__( 'Items', 'wcorderpdf' ) . '</th>';
 
         $html .= '<td><table cellpadding="5" cellspacing="0" border="1" style="border:1px solid  #6A6E71;width:100%"><tr><td ><strong>' . esc_html__( 'Item Name', 'wcorderpdf' ) . '</strong></td><td ><strong>' . esc_html__( 'Quantity', 'wcorderpdf' ) . '</strong></td><td ><strong>' . esc_html__( 'Price', 'wcorderpdf' ) . '</strong></td></tr>';
 
@@ -222,3 +223,5 @@ function wc_invoice_get_order_details_pdf_ajax_code(){
 
 add_action( 'wp_ajax_get_order_details', 'wc_invoice_get_order_details_pdf_ajax_code' );
 add_action( 'wp_ajax_nopriv_get_order_details', 'wc_invoice_get_order_details_pdf_ajax_code' );
+
+
